@@ -21,7 +21,7 @@ def generate_password(length):
     ]
 
     #Fill the remaining length with random choices from all characters
-    password += random.choice(all_characters, k=length-4)
+    password += random.choices(all_characters, k=length-4)
 
     #shuffle the same result to ensure randomness
     random.shuffle(password)
